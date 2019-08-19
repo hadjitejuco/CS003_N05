@@ -1,0 +1,16 @@
+//solve for the sum of two integers
+//Input -> two integers
+//Process -> x = a+b   -> variables
+//Ouput -> x = sum
+
+//default a=10, b=20, c=30 (addition)
+#include <iostream>
+using namespace std;
+int main() {
+	int a,b,c;  //variable declaration
+	a = 10;		//assign a value to a variable
+	b = 20; 	//assign a value to a variable	
+	c = a+b;	// process -> compute 
+	cout << "The sum is " << c;  //output
+	return 0;
+}
