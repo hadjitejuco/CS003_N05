@@ -1,0 +1,12 @@
+//ask the user to input a value
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	//prompt the user for input
+	cout << "Input two integers: ";
+	cin >> a  >> b;
+	c = a+b;
+	cout << "The sum is " << c;
+	return 0;
+}
