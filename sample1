@@ -1,0 +1,10 @@
+//c++
+#include <iostream> //library 
+using namespace std; 
+//int or integer -> whole numbers
+int main()  //main function
+{
+	//cout -> display
+	cout << "Hello World";  //cout -> function
+	return 0;
+}
