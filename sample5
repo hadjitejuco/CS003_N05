@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	cout << "Enter Two integers: ";
+	cin >> a >> b;
+	//c = a+b;
+	//cout << "Addition " << c << endl;	
+	cout << "Addition " << a+b << endl;
+	//c = a-b;
+	//cout << "Subtration " << c << endl;
+	cout << "Subtration " << a-b << endl;
+	//c = a*b;
+	//cout << "Multiplication " << c<< endl;
+	cout << "Multiplication " << a*b << endl;
+	//c = a/b;
+	//cout << "Division " << c << endl;
+	cout << "Division " << a/b << endl;
+	return 0;
+}
