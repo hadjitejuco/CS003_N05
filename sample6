@@ -10,7 +10,13 @@ int main(){
     cout << "Enter radius: ";
     cin >> r;
     //area = 3.14159 * r * r;   
+    
+    //regular formula
     area = pi * r * r;
+    
+    //use of function pow()
+    area = pi*pow(r,2);
+
     cout << "The area is " << area;
     return 0;
 }
