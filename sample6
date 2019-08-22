@@ -1,0 +1,16 @@
+
+//find the area of a circle.
+//area = 3.1415 r^2 
+#include <iostream>
+#define pi 3.14159 
+using namespace std;
+int main(){
+    float area, r;
+    //float pi = 3.14159;
+    cout << "Enter radius: ";
+    cin >> r;
+    //area = 3.14159 * r * r;   
+    area = pi * r * r;
+    cout << "The area is " << area;
+    return 0;
+}
