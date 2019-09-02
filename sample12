@@ -1,0 +1,29 @@
+//nested if 
+//0 display the number is 0
+//<0 the number is negative
+#include <iostream>
+using namespace std;
+int main(){
+	int a;
+	cout << "Enter a number: ";
+	cin >> a;  //10   -> a --> 1-10,  //15 --> a -> 11-20
+	//accept positve numbers (>0)
+	if (a>0){	//positive numbers
+		if (a<=10) {
+			cout << "a --> 1 to 10 ";
+		}
+		if (a>10 && a<=20){
+			cout << "a --> 11 to 20 ";
+		}
+		if (a>20){
+			cout << "a --> 21 above .... ";
+		}
+	}
+	if (a==0){
+		cout << "The number is zero ";
+	}
+	if (a<0){
+		cout << "The number is negative ";
+	}
+	return 0;
+}
