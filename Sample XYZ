@@ -1,0 +1,108 @@
+//scope resolution operator  (::)
+#include <iostream>
+#include <string.h>
+int n = 1;      //global var
+using namespace std;
+int main(){
+    int n=2;        //local var 
+    {
+        int n=3;        //local var 
+        {
+            int n=4;        //local var 
+            cout << "Inner " << n << endl;
+            cout << "Outer " << ::n << endl;
+        }
+        cout << "Inner " << n << endl;
+        cout << "Outer " << ::n << endl;
+    }
+    cout << "Inner " << n << endl;
+    cout << "Outer " << ::n << endl;
+    system ("pause>0");
+}
+---------------------------------------
+//create user defined data types
+//void, int, float, double, char
+#include <iostream>
+//user defined data type
+typedef int integer;
+typedef float real;
+
+using namespace std;
+int main(){
+    integer a=1;
+    real b = 12.12;
+    cout << a << endl;
+    cout << b << endl;
+    system ("pause>0");
+}
+---------------------------------------
+//print ascii characters
+#include <iostream>
+
+
+using namespace std;
+int main(){
+    char ch;
+    cout << "Enter a character: ";
+    cin >> ch;
+    cout    << "The Ascii value of " << ch << " is" 
+            << int(ch)<< endl;
+    
+
+    system ("pause>0");
+    return 0;
+}
+---------------------------------------
+//  relational operators  (true or false)
+//  ==, !=, <, >, <=, >=
+#include <iostream>
+using namespace std;
+int main(){
+    int n; 
+    cout << "Enter a number : ";
+    cin >> n;
+    
+    cout << "\n(n<10) -> " << (n<10);
+    cout << "\n(n>10) -> " << (n>10);
+    cout << "\n(n<=10) -> " << (n<=10);
+    cout << "\n(n>=10) -> " << (n>=10);
+    cout << "\n(n!=10) -> " << (n!=10);
+    cout << "\n(n==10) -> " << (n==10);
+    system ("pause>0");
+    return 0;
+}
+-----------------------
+//  logical operators (AND OR NOT) (&&  ||   !)
+#include <iostream>
+using namespace std;
+int main(){
+    cout << "\nAND OPERATOR";
+    cout << "\n(10<20) && (30<40) "<< (10<20 && 30<40);
+    cout << "\n(10<20) && (30>40) "<< (10<20 && 30>40);
+    cout << "\n(10>20) && (30<40) "<< (10>20 && 30<40);
+    cout << "\n(10>20) && (30>40) "<< (10<20 && 30>40);
+    cout << "\nOR OPERATOR";
+    cout << "\n(10<20) || (30<40) "<< (10<20 || 30<40);
+    cout << "\n(10<20) || (30>40) "<< (10<20 || 30>40);
+    cout << "\n(10>20) || (30<40) "<< (10>20 || 30<40);
+    cout << "\n(10>20) || (30>40) "<< (10>20 || 30>40);
+    cout << "\nNOT OPERATOR";
+    cout << "\n(10<20) "<< !(10<20);
+    cout << "\n(10>20) "<< ! (10>20);
+    
+    system ("pause>0");
+    return 0;
+}
+------------------------------------------
+//  ternary operator
+#include <iostream>
+using namespace std;
+int main(){
+    int a,b,max;
+    cout << "Enter two numbers: ";
+    cin >> a >> b;
+    max = (a>b)?a:b;
+    cout << "Maximum value is " << max;
+    system ("pause>0");
+    return 0;
+}
