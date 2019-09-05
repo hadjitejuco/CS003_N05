@@ -106,3 +106,33 @@ int main(){
     system ("pause>0");
     return 0;
 }
+//	(comma operator ,)
+#include <iostream>
+using namespace std;
+int main(){
+	int a,b,c;
+	
+	c = (a=10, b=20, a+b);
+	
+	cout << c;
+	
+	
+	system ("pause>0");
+	return 0;
+}
+//	(comma operator ,)
+#include <iostream>
+using namespace std;
+int main(){
+	
+	int num, sq, cube;
+	num = 10;
+	
+	sq = (num*num), cube = (num*num*num);
+	
+	cout <<  "squre of number " << sq <<endl;
+	cout <<  "cube of number " << cube  << endl;
+	
+	system ("pause>0");
+	return 0;
+}
