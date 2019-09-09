@@ -1,0 +1,14 @@
+//determine if a number is greater than 100
+#include <iostream>
+using namespace std;
+int main(){
+	int x;
+	cout << "Enter a number: ";
+	cin >> x;
+	if (x>100){		//true
+		cout << " number is greater than 100";
+	}else{			//false
+		cout << " number is less than 100";
+	}
+	return 0;
+}
