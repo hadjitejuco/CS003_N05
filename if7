@@ -1,0 +1,20 @@
+//G g - Green
+//B b - Blue
+//R r - Red
+#include <iostream>
+using namespace std;
+int main(){
+	char color;
+	cout << "Enter a letter ";
+	cin >> color;
+	if (color=='G' || color=='g'){
+		cout << "Green";
+	}else if (color=='B' || color =='b'){
+		cout << "Blue";
+	}else if (color =='R'|| color == 'r'){
+		cout << "Red";
+	}else{
+		cout << "Invalid";
+	}
+	return 0;
+}
