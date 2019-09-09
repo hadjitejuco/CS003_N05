@@ -1,0 +1,24 @@
+#include <iostream>
+using namespace std;
+int main(){
+	int choice;  
+	//char choice;    // add ' ' if you use char type
+	float temp,cnvtemp;
+	cout << "MENU\n";
+	cout << "1. Farenheit to Celcius\n";
+	cout << "2. Celcius to Farenheit\n";
+	cout << "Enter your choice: \n";
+	cin >> choice;	//1 or 2
+	if (choice==1){
+		cout << "Enter temp in F -> ";
+		cin >> temp;
+		cnvtemp = (temp-32) / 1.8;
+		cout << "Temp is " << cnvtemp;
+	}else{
+		cout << "Enter temp in C -> ";
+		cin >> temp;
+		cnvtemp = (1.8*temp)+32;
+		cout << "Temp is " << cnvtemp;
+	}
+	return 0;
+}
