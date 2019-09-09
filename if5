@@ -3,7 +3,8 @@
 using namespace std;
 int main(){
 	char op;
-	float a,b,res;
+	int a,b;
+	float res;
 	cout << "Enter two numbers ";
 	cin >> a >> b;
 	cout << "\nEnter operator ";
@@ -22,5 +23,5 @@ int main(){
 		cout << "Invalid";
 	}
 	cout << "Result is " << res;
-	return 
+	return 0;
 }
