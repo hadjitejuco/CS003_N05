@@ -1,0 +1,26 @@
+//arithmetic calculator
+#include <iostream>
+using namespace std;
+int main(){
+	char op;
+	float a,b,res;
+	cout << "Enter two numbers ";
+	cin >> a >> b;
+	cout << "\nEnter operator ";
+	cin >> op;
+	if (op=='+'){
+		res = a+b;
+	}else if (op=='-'){
+		res = a-b;
+	}else if (op=='*'){
+		res = a*b;
+	}else if (op=='/'){
+		res = a/b;
+	}else if (op=='%'){
+		res = a%b;
+	}else{
+		cout << "Invalid";
+	}
+	cout << "Result is " << res;
+	return 
+}
