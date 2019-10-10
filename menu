@@ -1,0 +1,46 @@
+//addition, subtraction, mul, div, 5-> exit 
+#include <iostream>
+using namespace std;
+int main()
+{
+    int choice,x,y;
+    while(1){
+        //system ("cls");
+        cout << "MENU\n";
+        cout << "1. Add\n";
+        cout << "2. Sub\n";
+        cout << "3. Mul\n";
+        cout << "4. Div\n";
+        cout << "5. Exit\n";
+        cout << "Enter choice :";
+        cin >> choice;
+        switch (choice){
+            case 1:
+                cout << "Enter two numbers ";
+                cin >> x >> y;
+                cout << "Sum is " << x+y;
+                break;
+             case 2:
+                cout << "Enter two numbers ";
+                cin >> x >> y;
+                cout << "Diff is " << x-y;
+                break;
+             case 3:
+                cout << "Enter two numbers ";
+                cin >> x >> y;
+                cout << "Prod is " << x*y;
+                break;
+             case 4:
+                cout << "Enter two numbers ";
+                cin >> x >> y;
+                cout << "Div is " << x/y;
+                break;
+             case 5:
+                exit(1); //true 
+            default:
+                cout << "Invalid";
+        }
+        //system("pause");
+    }
+    return 0;
+}
